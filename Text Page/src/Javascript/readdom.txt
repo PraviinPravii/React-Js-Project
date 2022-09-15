@@ -1,0 +1,43 @@
+
+import './App.css'; 
+import ReactDOM from 'react-dom';
+
+
+function App() {
+  
+  function full_name(user){
+
+    return user.f_name+" "+user.l_name
+    
+  }
+  const user={
+    f_name:'Praveen',
+    l_name:'Acharya'
+  }
+  const element=(
+    <h1>Hello {full_name(user)}</h1>
+  )
+
+  
+    const root=ReactDOM.createRoot(document.getElementById('root'))
+    root.render(<h1>{element}</h1>)
+  return (
+    
+    <div id="root">
+    {/* <!-- This element's contents will be replaced with your component. --> */}
+    
+    
+    </div>
+    
+
+
+
+    
+  );
+}
+
+
+
+
+
+export default App;
